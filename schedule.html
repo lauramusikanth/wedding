@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule | Laura & Shannon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="schedule-page">
+  <div class="side-nav">
+    <button id="openRsvpSide" type="button">RSVP</button>
+    <a href="index.html">Invite</a>
+    <a href="story.html">Story</a>
+    <a href="schedule.html">Schedule</a>
+    <a href="details.html">Details</a>
+    <a href="attire.html">Attire</a>
+    <a href="travel.html">Travel</a>
+    <a href="registry.html">Registry</a>
+  </div>
+
+  <main class="schedule-wrap">
+    <section class="schedule-card">
+
+      <div class="schedule-header">
+        <h1>Schedule</h1>
+        <p>A simple timeline for the day.</p>
+      </div>
+
+      <div class="fancy-divider"></div>
+
+<section class="timeline simple-timeline">
+
+<div class="schedule-event with-art art-right">
+  <img class="event-art temple-art" src="images/temple_exterior.png" alt="">
+  <p class="timeline-time">4:30 PM</p>
+  <h2>We Do!</h2>
+  <p>The Temple</p>
+  <p>Atlanta, Georgia</p>
+</div>
+
+  <div class="schedule-event">
+    <p class="timeline-time">After Ceremony</p>
+    <h2>Transportation</h2>
+    <p>Uber vouchers provided between venues.</p>
+  </div>
+
+<div class="schedule-event">
+  <img class="event-art fernbank-art" src="images/fernbank_front.png" alt="">
+  <p class="timeline-time">6:00 PM</p>
+  <h2>We Drink!</h2>
+  <p>Fernbank Museum</p>
+</div>
+
+  <div class="schedule-event">
+    <p class="timeline-time">7:00 PM</p>
+    <h2>We Eat!</h2>
+    <p>Dinner service begins.</p>
+  </div>
+
+  <div class="schedule-event">
+    <p class="timeline-time">8:30 PM</p>
+    <h2>Sweets!</h2>
+    <p>Dessert bar opens.</p>
+  </div>
+
+<div class="schedule-event">
+  <img class="event-art drinks-art" src="images/drinks.png" alt="">
+  <p class="timeline-time">9:30 PM</p>
+  <h2>The party goes on!</h2>
+  <p>Dancing, drinks, and celebration.</p>
+</div>
+
+  <div class="schedule-event">
+    <p class="timeline-time">12:00 AM</p>
+    <h2>Farewell</h2>
+    <p>The celebration concludes.</p>
+  </div>
+
+</section>
+      <div class="fancy-divider"></div>
+
+      <section class="schedule-info-grid">
+
+  <div class="schedule-info-box">
+    <h2>Uber Vouchers</h2>
+    <p>
+      Uber vouchers will be provided for transportation between
+      The Temple and Fernbank Museum.
+    </p>
+    <p>
+      Instructions and voucher links will be shared closer to the wedding.
+    </p>
+    <a href="travel.html" class="outline-button">View Travel</a>
+  </div>
+
+  <div class="schedule-info-box">
+    <h2>Good To Know</h2>
+    <p>
+      Black tie, all-black attire is requested for the ceremony and reception.
+    </p>
+    <p>
+      You may wish to bring a wrap, shawl, or jacket for the ceremony.
+    </p>
+    <a href="attire.html" class="outline-button">View Attire</a>
+  </div>
+
+</section>
+
+    </section>
+  </main>
+  <div id="rsvpModal" class="modal hidden">
+    <div class="modal-card rsvp-card">
+      <button id="closeRsvp" class="close" type="button">×</button>
+
+      <div class="rsvp-header">
+        <p class="modal-subtitle">Kindly respond below</p>
+        <h2>RSVP</h2>
+        <div class="mini-divider"></div>
+      </div>
+
+      <div id="nameStep">
+        <label for="guestName">Your Name</label>
+        <input type="text" id="guestName" placeholder="First and last name">
+        <button id="checkName" type="button">Continue</button>
+        <p id="nameMessage"></p>
+      </div>
+
+      <form id="rsvpForm" class="hidden">
+        <p id="welcomeGuest"></p>
+
+        <label for="attending">Will you be attending?</label>
+        <select id="attending" required>
+          <option value="">Select one</option>
+          <option value="yes">Yes, can’t wait!</option>
+          <option value="no">No, unable to attend</option>
+        </select>
+
+        <div id="plusOneSection" class="hidden rsvp-panel-section">
+          <label class="checkbox-label">
+            <input type="checkbox" id="bringingPlusOne">
+            I am bringing a plus one
+          </label>
+
+          <div id="plusOneNameField" class="hidden">
+            <label for="plusOneName">Plus One Name</label>
+            <input type="text" id="plusOneName" placeholder="Their full name">
+          </div>
+        </div>
+
+        <div id="mealSection" class="hidden rsvp-panel-section">
+          <label for="mealChoice">Your Dinner Selection</label>
+          <select id="mealChoice">
+            <option value="">Select one</option>
+            <option value="short-ribs">Cabernet Braised Short Ribs</option>
+            <option value="white-fish">Herb Marinated Local White Fish</option>
+            <option value="blackened-chicken">Blackened Chicken</option>
+            <option value="veggie-gnocchi">Brown Butter Cream Gnocchi</option>
+          </select>
+
+          <button type="button" class="menu-details-button" data-open-menu>
+            See Full Dinner Options
+          </button>
+
+          <div id="plusOneMealField" class="hidden">
+            <label for="plusOneMealChoice">Plus One Dinner Selection</label>
+            <select id="plusOneMealChoice">
+              <option value="">Select one</option>
+              <option value="short-ribs">Cabernet Braised Short Ribs</option>
+              <option value="white-fish">Herb Marinated Local White Fish</option>
+              <option value="blackened-chicken">Blackened Chicken</option>
+              <option value="veggie-gnocchi">Brown Butter Cream Gnocchi</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="brideNoteSection" class="hidden rsvp-panel-section">
+          <label for="brideNote">Send a note to the brides, optional</label>
+          <textarea id="brideNote" placeholder="Leave us a note"></textarea>
+        </div>
+
+        <div id="reasonSection" class="hidden">
+          <label for="reason">We're going to miss you, any message?</label>
+          <textarea id="reason" placeholder="Optional"></textarea>
+        </div>
+
+        <button type="submit">Submit RSVP</button>
+      </form>
+
+      <div id="confirmation" class="hidden confirmation">
+        <h3 id="confirmationTitle"></h3>
+        <p id="confirmationMessage"></p>
+        <button id="finishRsvp" type="button">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="menuModal" class="modal hidden">
+    <div class="modal-card menu-modal-card">
+      <button id="closeMenuDetails" class="close" type="button">×</button>
+
+      <h2>Dinner Menu</h2>
+      <p class="modal-subtitle">Full Dinner Options</p>
+
+      <div class="meal-details">
+        <p>
+          <strong>Cabernet Braised Short Ribs</strong><br>
+          Cabernet-braised short ribs served with roasted vegetables and a rich pan sauce.
+        </p>
+
+        <p>
+          <strong>Herb Marinated Local White Fish</strong><br>
+          Herb-marinated local white fish served with seasonal accompaniments.
+        </p>
+
+        <p>
+          <strong>Blackened Chicken</strong><br>
+          Blackened chicken served with a flavorful sauce and seasonal sides.
+        </p>
+
+        <p>
+          <strong>Brown Butter Cream Gnocchi</strong><br>
+          Brown butter cream gnocchi served as the vegetarian dinner option.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

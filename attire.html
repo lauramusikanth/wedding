@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attire | Laura & Shannon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="attire-page">
+
+<div class="attire-photo-grid">
+<img src="images/attire1.png" class="attire-photo photo-1" alt="">
+<img src="images/attire2.png" class="attire-photo photo-2" alt="">
+<img src="images/attire3.png" class="attire-photo photo-3" alt="">
+<img src="images/attire4.png" class="attire-photo photo-4" alt="">
+<img src="images/attire5.png" class="attire-photo photo-5" alt="">
+<img src="images/attire6.png" class="attire-photo photo-6" alt="">
+<img src="images/attire7.png" class="attire-photo photo-7" alt="">
+<img src="images/attire8.png" class="attire-photo photo-8" alt="">
+<img src="images/attire9.png" class="attire-photo photo-9" alt="">
+</div>
+  <div class="side-nav">
+    <button id="openRsvpSide" type="button">RSVP</button>
+    <a href="index.html">Invite</a>
+    <a href="story.html">Story</a>
+    <a href="schedule.html">Schedule</a>
+    <a href="details.html">Details</a>
+    <a href="attire.html">Attire</a>
+    <a href="travel.html">Travel</a>
+    <a href="registry.html">Registry</a>
+  </div>
+
+  <main class="attire-wrap">
+  <section class="attire-panel">
+
+    <div class="attire-hero-layout">
+
+      <img src="images/dress-woman.png"
+           class="attire-model attire-model-left"
+           alt="Women's black attire illustration">
+
+      <div class="attire-heading">
+        <h1>Attire</h1>
+
+        <div class="fancy-divider"></div>
+
+        <p class="dress-code">Black Tie</p>
+        <p class="dress-subtitle">All Black Attire Requested</p>
+
+        <p class="attire-intro">
+          We kindly ask guests to wear formal all-black attire for our celebration.
+          The goal is timeless elegance, a cohesive look, and a room full of beautiful people.
+        </p>
+      </div>
+
+      <img src="images/dress-man.png"
+           class="attire-model attire-model-right"
+           alt="Men's black attire illustration">
+
+    </div>
+
+    <div class="fancy-divider"></div>
+
+    <section class="attire-guidelines">
+      <div class="attire-column">
+        <h2>Dresses & Jumpsuits</h2>
+        <ul>
+          <li>Formal black gowns</li>
+          <li>Cocktail dresses</li>
+          <li>Elegant jumpsuits</li>
+          <li>Dressy separates</li>
+          <li>Formal heels or dress shoes</li>
+        </ul>
+      </div>
+
+      <div class="attire-column">
+        <h2>Suits & Tuxedos</h2>
+        <ul>
+          <li>Black tuxedo </li>
+          <li>Black suit </li>
+          <li>Black dress shirt</li>
+          <li>Black tie or bow tie</li>
+          <li>Black dress shoes</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="fancy-divider"></div>
+
+    <section class="attire-notes">
+      <h2>A Few Notes</h2>
+      <p>The ceremony will take place at The Temple.</p>
+      <p>You may wish to bring a wrap, shawl, or jacket for the ceremony.</p>
+      <p>We kindly ask guests to wear black.</p>
+      <p>Look elegant. Have fun. Celebrate with us.</p>
+    </section>
+
+  </section>
+</main>
+  <div id="rsvpModal" class="modal hidden">
+    <div class="modal-card rsvp-card">
+      <button id="closeRsvp" class="close" type="button">×</button>
+
+      <div class="rsvp-header">
+        <p class="modal-subtitle">Kindly respond below</p>
+        <h2>RSVP</h2>
+        <div class="mini-divider"></div>
+      </div>
+
+      <div id="nameStep">
+        <label for="guestName">Your Name</label>
+        <input type="text" id="guestName" placeholder="First and last name">
+        <button id="checkName" type="button">Continue</button>
+        <p id="nameMessage"></p>
+      </div>
+
+      <form id="rsvpForm" class="hidden">
+        <p id="welcomeGuest"></p>
+
+        <label for="attending">Will you be attending?</label>
+        <select id="attending" required>
+          <option value="">Select one</option>
+          <option value="yes">Yes, can’t wait!</option>
+          <option value="no">No, unable to attend</option>
+        </select>
+
+        <div id="plusOneSection" class="hidden rsvp-panel-section">
+          <label class="checkbox-label">
+            <input type="checkbox" id="bringingPlusOne">
+            I am bringing a plus one
+          </label>
+
+          <div id="plusOneNameField" class="hidden">
+            <label for="plusOneName">Plus One Name</label>
+            <input type="text" id="plusOneName" placeholder="Their full name">
+          </div>
+        </div>
+
+        <div id="mealSection" class="hidden rsvp-panel-section">
+          <label for="mealChoice">Your Dinner Selection</label>
+          <select id="mealChoice">
+            <option value="">Select one</option>
+            <option value="short-ribs">Cabernet Braised Short Ribs</option>
+            <option value="white-fish">Herb Marinated Local White Fish</option>
+            <option value="blackened-chicken">Blackened Chicken</option>
+            <option value="veggie-gnocchi">Brown Butter Cream Gnocchi</option>
+          </select>
+
+          <button type="button" class="menu-details-button" data-open-menu>
+            See Full Dinner Options
+          </button>
+
+          <div id="plusOneMealField" class="hidden">
+            <label for="plusOneMealChoice">Plus One Dinner Selection</label>
+            <select id="plusOneMealChoice">
+              <option value="">Select one</option>
+              <option value="short-ribs">Cabernet Braised Short Ribs</option>
+              <option value="white-fish">Herb Marinated Local White Fish</option>
+              <option value="blackened-chicken">Blackened Chicken</option>
+              <option value="veggie-gnocchi">Brown Butter Cream Gnocchi</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="brideNoteSection" class="hidden rsvp-panel-section">
+          <label for="brideNote">Send a note to the brides, optional</label>
+          <textarea id="brideNote" placeholder="Leave us a note"></textarea>
+        </div>
+
+        <div id="reasonSection" class="hidden">
+          <label for="reason">We're going to miss you, any message?</label>
+          <textarea id="reason" placeholder="Optional"></textarea>
+        </div>
+
+        <button type="submit">Submit RSVP</button>
+      </form>
+
+      <div id="confirmation" class="hidden confirmation">
+        <h3 id="confirmationTitle"></h3>
+        <p id="confirmationMessage"></p>
+        <button id="finishRsvp" type="button">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="menuModal" class="modal hidden">
+    <div class="modal-card menu-modal-card">
+      <button id="closeMenuDetails" class="close" type="button">×</button>
+
+      <h2>Dinner Menu</h2>
+      <p class="modal-subtitle">Full Dinner Options</p>
+
+      <div class="meal-details">
+        <p>
+          <strong>Cabernet Braised Short Ribs</strong><br>
+          Cabernet-braised short ribs served with roasted vegetables and a rich pan sauce.
+        </p>
+
+        <p>
+          <strong>Herb Marinated Local White Fish</strong><br>
+          Herb-marinated local white fish served with seasonal accompaniments.
+        </p>
+
+        <p>
+          <strong>Blackened Chicken</strong><br>
+          Blackened chicken served with a flavorful sauce and seasonal sides.
+        </p>
+
+        <p>
+          <strong>Brown Butter Cream Gnocchi</strong><br>
+          Brown butter cream gnocchi served as the vegetarian dinner option.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
