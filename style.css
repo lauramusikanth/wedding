@@ -1842,6 +1842,11 @@ textarea {
 
 .story-photo img {
   height: 280px;
+  object-position: center center; 
+}
+
+.story-photo.rotate-right img {
+  object-position: center 8%;
 }
 
 .story-photo.small img {
