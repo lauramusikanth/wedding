@@ -1190,27 +1190,40 @@ textarea {
   }
 
   .attire-wrap {
-    padding: 40px 16px;
+    padding: 110px 14px 40px;
+    overflow-x: hidden;
   }
 
   .attire-panel {
-    padding: 45px 28px;
+    width: 100%;
+    max-width: 560px;
+    padding: 45px 24px;
+    overflow: hidden;
   }
 
   .attire-hero-layout {
-    grid-template-columns: 1fr;
+    display: block;
+    min-height: auto;
   }
 
   .attire-model {
-    max-width: 220px;
-    margin: 0 auto;
-    opacity: .75;
+    position: static;
+    display: block;
+    width: 170px;
+    max-width: 46%;
+    margin: 18px auto;
+    opacity: .72;
+    filter:
+      drop-shadow(0 0 18px rgba(255,255,255,.08))
+      drop-shadow(0 12px 24px rgba(47,59,40,.22));
   }
 
   .attire-model-left,
   .attire-model-right {
+    left: auto;
+    right: auto;
+    top: auto;
     transform: none;
-    justify-self: center;
   }
 
   .attire-panel h1 {
