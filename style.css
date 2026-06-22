@@ -2624,3 +2624,24 @@ button:hover,
     font-size: 16px;
   }
 }
+/* Remove white gap under top nav on invite page */
+@media (max-width: 1000px) {
+  body {
+    padding-top: 0;
+  }
+
+  .invite-landing,
+  .landing {
+    padding-top: 116px;
+  }
+
+  .page-content,
+  .details-wrap,
+  .schedule-wrap,
+  .attire-wrap,
+  .travel-wrap,
+  .registry-wrap,
+  .story-wrap {
+    padding-top: 122px;
+  }
+}
